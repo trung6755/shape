@@ -20,9 +20,29 @@ namespace shape
             Console.WriteLine(circle);
 
             Circle circle2 = new Circle(5);
-            circle2.getArea();
-            circle2.getPerimeter();
+            Console.WriteLine(circle2 + " dien tich la " + circle2.getArea() + ", chu vi la " + circle2.getPerimeter());
+
+            ComparableCircle[] circles = new ComparableCircle[1];
+            circles[0] = new ComparableCircle(3.6);
             
+            
+
+            Console.WriteLine("Pre-sorted:");
+            foreach (ComparableCircle circle1 in circles)
+            {
+                Console.WriteLine(circle);
+            }
+
+            Array.Sort(circles);
+
+            Console.WriteLine("After-sorted:");
+            foreach (ComparableCircle circle1 in circles)
+            {
+                Console.WriteLine(circle);
+            }
+
+
+
         }
     }
 }
