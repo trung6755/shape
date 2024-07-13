@@ -63,7 +63,10 @@ namespace shape
                 Console.WriteLine(circle1);
             }
 
-            
+            Square square = new Square(5, "red");
+            Console.WriteLine(square);
+            square.HowToColor();
+            Console.WriteLine(square);
 
         }
     }
