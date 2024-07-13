@@ -2,7 +2,7 @@
 
 namespace shape
 {
-    public class Circle
+    public class Circle : IResizable
     {
         private double radius = 1;
 
@@ -38,6 +38,11 @@ namespace shape
                     + ", which is a subclass of "
                     +base.ToString();
 
+        }
+
+        public void resize(double percent)
+        {
+            radius *= percent;
         }
     }
 }
